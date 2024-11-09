@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Solutions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styling */
+        .header-section {
+            height: 100vh;
+            background: url('https://wallpaperset.com/w/full/b/3/3/436108.jpg') no-repeat center center/cover;
+            color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+			
+        }
+
+        .header-section p {
+            font-size: 1.2em;
+        }
+
+        /* Services Styling */
+        .services-section .fa-3x {
+            color: #007bff;
+        }
+
+        /* Contact Section */
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">AK SOFTWARE SOLUTION</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header id="home" class="header-section">
+  <!--   <div class="container text-center">
+        <h1>Welcome to IT Solutions</h1>
+        <p>Your partner in digital transformation</p>
+        <a href="#services" class="btn btn-primary">Our Services</a>
+    </div> -->
+</header>
+
+<!-- Services Section -->
+<section id="services" class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                <h4>Web Development</h4>
+                <p>High-quality web solutions to drive your business forward.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-network-wired fa-3x mb-3"></i>
+                <h4>Networking</h4>
+                <p>Secure and scalable networking solutions.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-cloud fa-3x mb-3"></i>
+                <h4>Cloud Services</h4>
+                <p>Optimize your cloud infrastructure for better efficiency.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="text-center">We are a team of IT experts dedicated to helping businesses leverage technology to grow and succeed.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Smooth scrolling for nav links
+        $("a.nav-link").on("click", function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $("html, body").animate(
+                    {
+                        scrollTop: $(hash).offset().top,
+                    },
+                    800
+                );
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
